@@ -3,6 +3,7 @@ import ProductList from "./components/products/list";
 import Footer from "./components/layout/footer";
 import apple from "./components/products/appleone.png";
 import Image from "next/image";
+import Products from "./components/products/products";
 export default function IndexPage() {
   const [show, setShow] = useState(false);
   const [product, setProduct] = useState(false);
@@ -812,6 +813,7 @@ export default function IndexPage() {
         <div className="container mx-auto px-2">
           <div className="w-full h-full rounded border-gray-300">
             <ProductList />
+            <Products/>
           </div>
         </div>
         <Footer />
