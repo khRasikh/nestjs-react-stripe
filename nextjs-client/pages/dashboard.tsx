@@ -4,6 +4,8 @@ import Footer from "./components/layout/footer";
 import apple from "./components/products/appleone.png";
 import Image from "next/image";
 import Products from "./components/products/products";
+import Link from "next/link";
+
 export default function IndexPage() {
   const [show, setShow] = useState(false);
   const [product, setProduct] = useState(false);
@@ -448,7 +450,7 @@ export default function IndexPage() {
                 </svg>
 
                 <h3 className="text-base text-green-900 font-bold tracking-normal leading-tight ml-3 hidden lg:block">
-                  E-Commerce
+                  <Link href={"/"}>E-Commerce</Link>
                 </h3>
               </div>
               <ul className="pr-12 xl:flex items-center h-full hidden">
@@ -611,6 +613,7 @@ export default function IndexPage() {
                     <Image
                       className="rounded h-10 w-10 object-cover"
                       src={apple}
+                      alt={"apple"}
                     />
                     <p className="text-gray-800 text-sm ml-2">Rasikh</p>
                   </div>
@@ -663,7 +666,7 @@ export default function IndexPage() {
                     <span className="ml-2">Dashboard</span>
                   </div>
                 </li>
-                <li className="flex xl:hidden  cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex items-center relative">
+                <li className="xl:hidden  cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 focus:text-indigo-700 focus:outline-none flex items-center relative">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-help"
@@ -683,7 +686,7 @@ export default function IndexPage() {
                   </svg>
                   <span className="ml-2">Products</span>
                 </li>
-                <li className="flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
+                <li className="xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-indigo-700 flex items-center focus:text-indigo-700 focus:outline-none">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="icon icon-tabler icon-tabler-settings"
@@ -732,7 +735,7 @@ export default function IndexPage() {
             <h4 className="text-2xl font-bold leading-tight text-gray-800">
               User Profile
             </h4>
-            <ul className="flex flex-col md:flex-row items-start md:items-center text-gray-600 text-sm mt-3">
+            <ul className="flex md:flex-row items-start md:items-center text-gray-600 text-sm mt-3">
               <li className="flex items-center mr-3 mt-3 md:mt-0">
                 <span className="mr-2">
                   <svg
@@ -796,7 +799,7 @@ export default function IndexPage() {
                     <line x1={3} y1={21} x2={21} y2={21} />
                   </svg>
                 </span>
-                <span>Started on 29 Jan 2020</span>
+                <span>Started on {new Date().toDateString()}</span>
               </li>
             </ul>
           </div>
@@ -813,7 +816,7 @@ export default function IndexPage() {
         <div className="container mx-auto px-2">
           <div className="w-full h-full rounded border-gray-300">
             <ProductList />
-            <Products/>
+            <Products />
           </div>
         </div>
         <Footer />

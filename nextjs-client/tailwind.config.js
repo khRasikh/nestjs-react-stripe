@@ -5,7 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/images/apple.jpeg')",
+        "hero-patterns": "url('/images/fruits.jpg')",
+      },
+    },
+    fontFamily: {
+      sans: ["Helvetica", "Arial", "sans-serif"],
+    },
   },
   plugins: [],
 };

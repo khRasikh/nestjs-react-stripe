@@ -7,11 +7,11 @@ export default function Products() {
         <div className="mx-auto container py-8">
           <div className="flex flex-wrap items-center lg:justify-between justify-center">
             {/* Card 1 */}
-            <div className="mx-2 w-72 lg:mb-0 mb-8">
+            <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
                 <img
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
-                  className="w-full h-44"
+                  className="w-full md:h-48 lg:h-48 h-full"
                 />
               </div>
               <div className="bg-white">
@@ -71,7 +71,7 @@ export default function Products() {
             </div>
             {/* Card 1 Ends */}
             {/* Card 2 */}
-            <div className="mx-2 w-72 lg:mb-0 mb-8">
+            <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
                 <img
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
@@ -135,7 +135,7 @@ export default function Products() {
             </div>
             {/* Card 2 Ends */}
             {/* Card 3  */}
-            <div className="mx-2 w-72 lg:mb-0 mb-8">
+            <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
                 <img
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
@@ -199,7 +199,7 @@ export default function Products() {
             </div>
             {/* Card 3 Ends */}
             {/* Card 4  */}
-            <div className="mx-2 w-72 lg:mb-0 mb-8">
+            <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
                 <img
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"

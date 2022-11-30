@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -5,9 +6,7 @@ const Footer = () => {
     <div className="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
         <div className="flex flex-col flex-shrink-0">
-          <div>
-          E-Commerce
-          </div>
+          <div><Link href={"/"}>E-Commerce</Link></div>
           <p className="text-sm leading-none text-gray-800 mt-4">
             Copyright © 2022
           </p>
@@ -142,7 +141,7 @@ const Footer = () => {
             className="text-base leading-4 p-4 relative z-0 w-full focus:outline-none text-gray-800 placeholder-gray-800"
             placeholder="Enter your email"
           />
-          <div className="cursor-pointer mr-4 cursor-pointer relative z-40">
+          <div className="cursor-pointer mr-4 relative z-40">
             <svg
               className="fill-current text-gray-800 hover:text-gray-500"
               width="16"

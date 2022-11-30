@@ -8,34 +8,30 @@ type Data = {
   email: string;
 };
 
-const UserPage: NextPage<{ data: Data }> = props => {
+const UserPage: NextPage<{ data: Data }> = (props) => {
   if (!props.data) {
     return <ErrorPage statusCode={404} />;
   }
 
-  return (
-    <div>
-        Hi{props.data.name}
-    </div>
-  );
+  return <div>Hi{props.data.name}</div>;
 };
 
 export const getServerSideProps: GetServerSideProps = async ({
   params,
-  res
+  res,
 }) => {
   try {
     const result = await fetch(`https://jsonplaceholder.typicode.com/users/1`);
-    console.log(result)
+    console.log(result);
     const data: Data = await result.json();
 
     return {
-      props: { data }
+      props: { data },
     };
   } catch {
     res.statusCode = 404;
     return {
-      props: {}
+      props: {},
     };
   }
 };
