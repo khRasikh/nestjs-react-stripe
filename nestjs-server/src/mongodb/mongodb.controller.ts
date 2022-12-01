@@ -7,11 +7,13 @@ import {
   Post,
   Put,
 } from '@nestjs/common';
+import { ApiTags } from '@nestjs/swagger';
 import { CreatePayment } from './dto/createPayment.dto';
 import { MongoDBService } from './mongodb.service';
 import { Payment } from './payment.schema';
 
 @Controller('mongodb')
+@ApiTags('MongoDB')
 export class MongoDBController {
   constructor(private readonly mongoDB: MongoDBService) {}
 

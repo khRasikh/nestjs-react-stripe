@@ -1,9 +1,18 @@
-import { Body, Controller, HttpStatus, Post, Res } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  HttpStatus,
+  Logger,
+  Post,
+  Res,
+} from '@nestjs/common';
 import { PaymentsService } from './payments.service';
 import { PaymentRequestBody } from './types/PaymentRequestBody';
 import { Response } from 'express';
+import { ApiTags } from '@nestjs/swagger';
 
 @Controller('payments')
+@ApiTags('Payments')
 export class PaymentsController {
   constructor(private paymentService: PaymentsService) {}
 
@@ -15,11 +24,11 @@ export class PaymentsController {
     this.paymentService
       .createPayment(paymentRequestBody)
       .then((res) => {
-        console.log('payment done successfully');
+        Logger.log('payment done successfully');
         response.status(HttpStatus.CREATED).json(res);
       })
       .catch((err) => {
-        console.log('payment not done');
+        Logger.log('payment not done');
         response.status(HttpStatus.BAD_REQUEST).json(err);
       });
   }
