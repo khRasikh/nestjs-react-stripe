@@ -815,8 +815,8 @@ export default function IndexPage() {
         {/* Page title ends */}
         <div className="container mx-auto px-2">
           <div className="w-full h-full rounded border-gray-300">
-            <ProductList />
             <Products />
+            <ProductList />
           </div>
         </div>
         <Footer />
