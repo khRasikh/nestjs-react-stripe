@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import iphone14 from "../../../public/images/iphone14.png";
+
 export default function Products() {
   return (
     <>
@@ -12,7 +14,7 @@ export default function Products() {
               <div>
                 <Image
                   alt="images"
-                  src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
+                  src={iphone14}
                   className="w-full md:h-48 lg:h-48 h-full"
                 />
               </div>
@@ -77,7 +79,7 @@ export default function Products() {
               <div>
                 <Image
                   alt="images"
-                  src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
+                  src={iphone14}
                   className="w-full h-44"
                 />
               </div>
@@ -142,7 +144,7 @@ export default function Products() {
               <div>
                 <Image
                   alt="images"
-                  src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
+                  src={iphone14}
                   className="w-full h-44"
                 />
               </div>
@@ -207,7 +209,7 @@ export default function Products() {
               <div>
                 <Image
                   alt="images"
-                  src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
+                  src={iphone14}
                   className="w-full h-44"
                 />
               </div>
