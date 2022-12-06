@@ -55,7 +55,7 @@ function ShoppingCart() {
                     <div className="w-1/4">
                       <img
                         src="https://cdn.tuk.dev/assets/templates/e-commerce-kit/bestSeller3.png"
-                        alt
+                        alt="image"
                         className="w-full h-full object-center object-cover"
                       />
                     </div>
@@ -101,7 +101,7 @@ function ShoppingCart() {
                     <div className="w-1/4">
                       <img
                         src="https://cdn.tuk.dev/assets/templates/e-commerce-kit/bestSeller2.png"
-                        alt
+                        alt="images"
                         className="w-full h-full object-center object-cover"
                       />
                     </div>
@@ -147,7 +147,7 @@ function ShoppingCart() {
                     <div className="h-full w-1/4">
                       <img
                         src="https://cdn.tuk.dev/assets/templates/e-commerce-kit/bestSeller1.png"
-                        alt
+                        alt="images"
                         className="w-full h-full object-center object-cover"
                       />
                     </div>
