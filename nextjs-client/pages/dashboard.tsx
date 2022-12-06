@@ -5,6 +5,7 @@ import apple from "./components/products/appleone.png";
 import Image from "next/image";
 import Products from "./components/products/products";
 import Link from "next/link";
+import awsImage from '../public/images/apple.jpeg';
 
 export default function IndexPage() {
   const [show, setShow] = useState(false);
@@ -376,9 +377,9 @@ export default function IndexPage() {
                 <div className="border-t border-gray-300">
                   <div className="w-full flex items-center justify-between px-6 pt-1">
                     <div className="flex items-center">
-                      <img
+                      <Image
                         alt="profile-pic"
-                        src="https://tuk-cdn.s3.amazonaws.com/assets/components/boxed_layout/bl_1.png"
+                        src={awsImage}
                         className="w-8 h-8 rounded-md"
                       />
                       <p className=" text-gray-800 text-base leading-4 ml-2">
