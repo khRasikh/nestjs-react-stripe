@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Footer from "./components/layout/footer";
 import Header from "./components/Shared/navbar";
 
@@ -9,9 +10,9 @@ export default function ErorrPage404() {
         <h3 className="font-extrabold text-red-700 my-6">Page Not Found!!</h3>
         <p>
           Go back to home{" "}
-          <a href="/" className="text-blue-700 underline hover:text-green-700">
+          <Link href="/" className="text-blue-700 underline hover:text-green-700">
             page
-          </a>
+          </Link>
           .
         </p>
       </div>
