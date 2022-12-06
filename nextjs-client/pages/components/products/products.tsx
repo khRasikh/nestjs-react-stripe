@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 export default function Products() {
   return (
@@ -9,7 +10,8 @@ export default function Products() {
             {/* Card 1 */}
             <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
-                <img
+                <Image
+                  alt="images"
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
                   className="w-full md:h-48 lg:h-48 h-full"
                 />
@@ -73,7 +75,8 @@ export default function Products() {
             {/* Card 2 */}
             <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
-                <img
+                <Image
+                  alt="images"
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
                   className="w-full h-44"
                 />
@@ -137,7 +140,8 @@ export default function Products() {
             {/* Card 3  */}
             <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
-                <img
+                <Image
+                  alt="images"
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
                   className="w-full h-44"
                 />
@@ -201,7 +205,8 @@ export default function Products() {
             {/* Card 4  */}
             <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
-                <img
+                <Image
+                  alt="images"
                   src="https://cdn.tuk.dev/assets/templates/classified/Bitmap.png"
                   className="w-full h-44"
                 />
