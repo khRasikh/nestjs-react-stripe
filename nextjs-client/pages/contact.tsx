@@ -9,9 +9,7 @@ export default function Contact() {
       <Header />
       <Hero />
       <div className="bg-gray-100 p-12">
-      <div className="m-12">
-        {ContactUs}
-      </div>
+        <div className="m-12">{ContactUs}</div>
       </div>
       <Footer />
     </>

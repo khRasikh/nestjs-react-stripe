@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <nav className="w-full border-b">
-        <Menu/>
+        <Menu />
       </nav>
     </>
   );

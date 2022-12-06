@@ -6,7 +6,9 @@ const Footer = () => {
     <div className="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4">
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
         <div className="flex flex-col flex-shrink-0">
-          <div><Link href={"/"}>E-Commerce</Link></div>
+          <div>
+            <Link href={"/"}>E-Commerce</Link>
+          </div>
           <p className="text-sm leading-none text-gray-800 mt-4">
             Copyright © 2022
           </p>

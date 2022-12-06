@@ -9,9 +9,7 @@ export default function About() {
       <Header />
       <Hero />
       <div className="bg-gray-100 p-12">
-      <div className="m-12">
-        {AboutUs}
-      </div>
+        <div className="m-12">{AboutUs}</div>
       </div>
       <Footer />
     </>
