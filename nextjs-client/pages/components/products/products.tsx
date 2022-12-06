@@ -77,11 +77,7 @@ export default function Products() {
             {/* Card 2 */}
             <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
-                <Image
-                  alt="images"
-                  src={iphone14}
-                  className="w-full h-44"
-                />
+                <Image alt="images" src={iphone14} className="w-full h-44" />
               </div>
               <div className="bg-white">
                 <div className="flex items-center justify-between px-4 pt-4">
@@ -142,11 +138,7 @@ export default function Products() {
             {/* Card 3  */}
             <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
-                <Image
-                  alt="images"
-                  src={iphone14}
-                  className="w-full h-44"
-                />
+                <Image alt="images" src={iphone14} className="w-full h-44" />
               </div>
               <div className="bg-white">
                 <div className="flex items-center justify-between px-4 pt-4">
@@ -207,11 +199,7 @@ export default function Products() {
             {/* Card 4  */}
             <div className="mx-2 lg:w-72 md:w-72 w-full lg:mb-0 mb-8">
               <div>
-                <Image
-                  alt="images"
-                  src={iphone14}
-                  className="w-full h-44"
-                />
+                <Image alt="images" src={iphone14} className="w-full h-44" />
               </div>
               <div className="bg-white">
                 <div className="flex items-center justify-between px-4 pt-4">

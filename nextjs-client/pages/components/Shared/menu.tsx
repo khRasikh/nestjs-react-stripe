@@ -10,11 +10,7 @@ export default function Menu() {
     <>
       <div className="py-5 md:py-0 container mx-auto px-6 flex items-center justify-between">
         <div aria-label="Home. logo" role="img">
-          <Image
-            className="w-12 h-12 md:w-auto"
-            src={apple}
-            alt="logo"
-          />
+          <Image className="w-12 h-12 md:w-auto" src={apple} alt="logo" />
         </div>
         <div>
           <button

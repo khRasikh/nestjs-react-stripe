@@ -5,7 +5,7 @@ import apple from "./components/products/appleone.png";
 import Image from "next/image";
 import Products from "./components/products/products";
 import Link from "next/link";
-import awsImage from '../public/images/apple.jpeg';
+import awsImage from "../public/images/apple.jpeg";
 
 export default function IndexPage() {
   const [show, setShow] = useState(false);

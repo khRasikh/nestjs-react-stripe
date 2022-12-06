@@ -10,7 +10,10 @@ export default function ErorrPage404() {
         <h3 className="font-extrabold text-red-700 my-6">Page Not Found!!</h3>
         <p>
           Go back to home{" "}
-          <Link href="/" className="text-blue-700 underline hover:text-green-700">
+          <Link
+            href="/"
+            className="text-blue-700 underline hover:text-green-700"
+          >
             page
           </Link>
           .
